@@ -1,0 +1,86 @@
+/* Set default font styles for the entire form */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Style the form header */
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style the form labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Style the form inputs */
+select, input[type="text"] {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Style the form select elements */
+select {
+  width: 100%;
+}
+
+/* Style the form submit button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Style the form submit button when hovered over */
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the form fieldset and legend elements */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+}
+
+/* Style the form error messages */
+input:invalid {
+  border-color: red;
+}
+
+input:invalid + span::before {
+  content: "❌ ";
+}
+
+input:valid + span::before {
+  content: "✓ ";
+  color: green;
+}
+
+span {
+  font-size: 12px;
+  font-style: italic;
+  color: red;
+}
